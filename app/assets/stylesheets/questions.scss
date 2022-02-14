@@ -1,0 +1,81 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+$gray: #F4F4F4;
+
+body {
+  background: $gray; // Using this variable
+}
+
+// ask.html.erb
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-submit {
+  margin-top: 20px;
+}
+
+#question {
+  float: left;
+  width: 60%;
+  padding: 20px;
+  border: solid 1px #CCCCCC;
+}
+
+#submit {
+  float: left;
+  width: 5%;
+  color: #FFFFFF;
+  background-color: #337AB7;
+  padding: 20px;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 500;
+  border: solid 1px #337AB7;
+}
+
+// answer.html.erb
+
+.display-question {
+  width: 30%;
+  background: #FFFFFF;
+  border-left: 6px solid #DDDDDD;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.display-answer {
+  width: 30%;
+  background: #FFFFE1;
+  border-left: 6px solid #DDDDDD;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.link {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+a {
+  color: #337AB7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5C7AB9;
+  text-decoration: none;
+}
